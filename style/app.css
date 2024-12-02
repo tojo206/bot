@@ -298,6 +298,15 @@ h2,h3,h4,h5,h6,button{
     position: relative;
     max-width: 1200px;
 }
+.chat-image {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 600px;
+    height: auto;
+}
 .chat-input{
     background: #00293a;
     border: 2px solid #08a8f1;
@@ -379,6 +388,7 @@ textarea:focus{
     background: radial-gradient(97.73% 97.73% at 50% 50%, #4CEBF3 0%, #007bb3 49.48%, #0B648F 100%);    
     top:0;
     bottom: 0;
+    z-index: -2;
 }
 button:hover{
     cursor: pointer;

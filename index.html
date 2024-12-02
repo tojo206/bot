@@ -28,33 +28,26 @@
 
   <div id="chatModal" style="display:none;">
 
-    <section class="chat-container">
+    <div class="chat-container">
+
+      <img src="img/IMDs.png" alt="Chat Background" title="Chat Background" class="chat-image">
+      <div id="bg-star"><div id="stars"></div><div id="stars2"></div><div id="stars3"></div></div>
+      <div class="container-flex">
+        <span class="close-button">&#x2715; Close</span>
+        <div id="chat-frame">
+          <span id="download-chat" onclick="handleDownload()"><img src="img/icon-download.svg" alt="Download Chat" title="Download Chat"> Download Chat</span>
+          <span id="clean-chat" onclick="cleanChat()" style="display:none"><img src="img/icon-trash.svg" alt="Clear Chat" title="Clear Chat"> Clear <b>Chat</b></span>
+          <div id="overflow-chat"></div><!--overflow-chat-->
+        </div><!--chat-frame-->
+        <div class="chat-input">
+          <textarea name="chat" id="chat" placeholder="Type your message here" maxlength="200"></textarea>
+          <button class="submit btn-send-chat" tabindex="0"><span>Send</span></button>
+          <span class="character-typing">Wait, <span></span> is typing...</span>
+        </div>
+      </div><!--container-flex-->
+    </div><!--chat-container-->
     
-            <div id="bg-star"><div id="stars"></div><div id="stars2"></div><div id="stars3"></div></div>
-            
-              <div class="container-flex">
-                <span class="close-button">&#x2715; Close</span>
-                <img src="img/IMDs.png" alt="Chat Background" title="Chat Background" class="chat-image">
-                  <div id="chat-frame">
-                   
-                   
-                    <span id="download-chat" onclick="handleDownload()"><img src="img/icon-download.svg" alt="Download Chat" title="Download Chat"> Download Chat</span>
-                    
-                    <span id="clean-chat" onclick="cleanChat()" style="display:none"><img src="img/icon-trash.svg" alt="Clear Chat" title="Clear Chat"> Clear <b>Chat</b></span>
-                    <div id="overflow-chat"></div><!--overflow-chat-->
-                    
-                  </div><!--chat-frame-->
-              <div class="chat-input">
-                <div class="input">
-                  <textarea name="chat" id="chat" placeholder="Type your message here" maxlength="200"></textarea>
-                </div>
-                <button class="submit btn-send-chat" tabindex="0"><span>Send</span></button>
-                <span class="character-typing">Wait, <span></span>  is typing...</span>
-                
-              </div><!--chat-input-->
-              
-            </div><!--container-flex-->
-    </section>  
+    
 
   </div><!--chatModal-->
 
