@@ -86,7 +86,7 @@ function shuffleArray(array) {
 				  </div>
 				`)
 		  }
-		  swiperCharacters.init();
+		  //swiperCharacters.init();
 		  return false;
 		  	
 		  	//Get Chat history
@@ -150,7 +150,6 @@ function shuffleArray(array) {
 				body: JSON.stringify({
 				  model: "o1-mini",
 				  messages: [{ role: "user", content: pmt }],
-				  max_tokens: 1500,
 				  temperature: 1,
 				  top_p: 1,
 				  n: 1,
